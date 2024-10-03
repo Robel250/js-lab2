@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Switch</title>
+    
+    <style>
+        #light-image {
+            width: 200px;
+            height: auto;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+        }
+    </style>
+   
+</head>
+<body>
+
+    <h1>Light Switch </h1>
+    
+    <button id="turnOffButton" onclick="document.getElementById('image').src='light-on.png' ">Turn Off Light</button>
+    <img id="image" src="light-on.png" alt="Light Image">
+
+    <button id="turnOnButton" onclick="document.getElementById('image').src='light-off.png'">Turn On Light</button>
+    
+    <h1>Current time</h1>
+    <div id="result"></div>
+    <script>
+    var mydate= new Date();
+    conle.log('current time' + mydate.getDate() + 
+    '-' + mydate.getMouth() + '-' + mydate.getFullYear())
+    </script>
+    
+    
+   
+
+</body>
+</html>
